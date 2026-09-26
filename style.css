@@ -1,0 +1,953 @@
+html {
+   scroll-behavior: smooth;
+}
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background-color: white;
+}
+
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+.logo span {
+    color: #e67e22;
+}
+
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #e67e22;
+}
+
+
+/* Hero Section */
+.hero {
+    height: calc(100vh - 75px);
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* Hero Content */
+.hero-content {
+    color: white;
+    max-width: 750px;
+    padding: 20px;
+}
+
+
+/* Small Heading */
+.small-title {
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+
+/* Main Heading */
+.hero-content h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+
+/* Description */
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Explore Button */
+.explore-btn {
+    display: inline-block;
+    margin-top: 30px;
+
+    padding: 14px 32px;
+
+    background-color: #e67e22;
+    color: white;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+
+/* Button Hover */
+.explore-btn:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+}
+/* ============================= */
+/* POPULAR DESTINATIONS */
+/* ============================= */
+
+.destinations {
+    padding: 90px 8%;
+    background-color: #f8f8f8;
+}
+
+
+/* Section Heading */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #e67e22;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    color: #222;
+}
+
+
+/* Destination Cards Container */
+
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* Card */
+
+.destination-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.4s;
+}
+
+
+/* Card Hover */
+
+.destination-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Image */
+
+.image-box {
+    height: 230px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+/* Image Hover */
+
+.destination-card:hover .image-box img {
+    transform: scale(1.1);
+}
+
+
+/* Card Content */
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+
+/* Explore Link */
+
+.card-content a {
+    text-decoration: none;
+    color: #e67e22;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.card-content a:hover {
+    color: #d35400;
+}
+
+/* ============================= */
+/* WHY TRAVEL WITH US */
+/* ============================= */
+
+.why-us {
+    padding: 90px 8%;
+    background-color: white;
+}
+
+
+/* Feature Container */
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* Feature Card */
+
+.feature-card {
+    text-align: center;
+
+    padding: 40px 25px;
+
+    background-color: #f8f8f8;
+
+    border-radius: 12px;
+
+    border: 1px solid #eeeeee;
+
+    transition: 0.4s;
+}
+
+
+/* Feature Hover */
+
+.feature-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Icon */
+
+.feature-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+
+    transition: 0.4s;
+}
+
+
+/* Icon Hover */
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.2);
+}
+
+
+/* Heading */
+
+.feature-card h3 {
+    font-size: 20px;
+    color: #222;
+
+    margin-bottom: 12px;
+}
+
+
+/* Description */
+
+.feature-card p {
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* TRAVEL PACKAGES */
+/* ============================= */
+
+.packages {
+    padding: 90px 8%;
+    background-color: #f8f8f8;
+}
+
+
+/* Package Container */
+
+.package-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* Package Card */
+
+.package-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.4s;
+}
+
+
+/* Card Hover */
+
+.package-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Package Image */
+
+.package-image {
+    height: 230px;
+    overflow: hidden;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+/* Image Hover */
+
+.package-card:hover .package-image img {
+    transform: scale(1.1);
+}
+
+
+/* Package Content */
+
+.package-content {
+    padding: 25px;
+}
+
+
+/* Duration */
+
+.duration {
+    display: inline-block;
+
+    color: #e67e22;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+/* Package Heading */
+
+.package-content h3 {
+    font-size: 24px;
+    color: #222;
+
+    margin-bottom: 12px;
+}
+
+
+/* Description */
+
+.package-content p {
+    color: #777;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* Bottom Area */
+
+.package-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* Price */
+
+.package-bottom small {
+    display: block;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+.package-bottom strong {
+    display: block;
+
+    color: #222;
+
+    font-size: 20px;
+
+    margin-top: 4px;
+}
+
+
+/* Book Button */
+
+.book-btn {
+    text-decoration: none;
+
+    background-color: #e67e22;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* Button Hover */
+
+.book-btn:hover {
+    background-color: #d35400;
+
+    transform: translateY(-2px);
+}
+/* ============================= */
+/* TRAVEL GALLERY */
+/* ============================= */
+
+.gallery {
+    padding: 90px 8%;
+    background-color: white;
+}
+
+
+/* Gallery Container */
+
+.gallery-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Gallery Item */
+
+.gallery-item {
+    height: 280px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+
+/* Gallery Image */
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+/* Image Hover */
+
+.gallery-item:hover img {
+    transform: scale(1.12);
+}
+
+
+/* Dark Overlay */
+
+.gallery-overlay {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 25px 20px;
+
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+
+    transform: translateY(100%);
+
+    transition: 0.4s;
+}
+
+
+/* Overlay Hover */
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+
+/* Gallery Heading */
+
+.gallery-overlay h3 {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Gallery Text */
+
+.gallery-overlay p {
+    font-size: 14px;
+
+    color: #ddd;
+}
+
+/* ============================= */
+/* CONTACT SECTION */
+/* ============================= */
+
+.contact {
+    padding: 90px 8%;
+    background-color: #f8f8f8;
+}
+
+
+/* Contact Container */
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1.3fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+
+/* Contact Information */
+
+.contact-info {
+    padding: 20px;
+}
+
+.contact-info h3 {
+    font-size: 32px;
+
+    color: #222;
+
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    color: #777;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* Contact Details */
+
+.contact-detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.contact-detail > span {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-detail h4 {
+    color: #222;
+
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Form Row */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+/* Input Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #e67e22;
+
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Submit Button */
+
+.submit-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #e67e22;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button Hover */
+
+.submit-btn:hover {
+    background-color: #d35400;
+
+    transform: translateY(-2px);
+}
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+    background-color: #1c1c1c;
+
+    color: white;
+
+    padding-top: 60px;
+}
+
+
+/* Footer Container */
+
+.footer-container {
+    width: 84%;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 50px;
+}
+
+
+/* Footer Logo */
+
+.footer-box h2 {
+    font-size: 27px;
+
+    margin-bottom: 20px;
+}
+
+.footer-box h2 span {
+    color: #e67e22;
+}
+
+
+/* Footer Heading */
+
+.footer-box h3 {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Footer Paragraph */
+
+.footer-box p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* Footer Lists */
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 12px;
+}
+
+.footer-box ul li a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+/* Link Hover */
+
+.footer-box ul li a:hover {
+    color: #e67e22;
+
+    padding-left: 5px;
+}
+
+
+/* Social Links */
+
+.social-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #e67e22;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    border-top: 1px solid #333;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #888;
+
+    font-size: 13px;
+}
+
